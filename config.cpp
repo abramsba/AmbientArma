@@ -13,9 +13,10 @@ class cfgpatches {
 	};
 };
 
-class ambientarma_preinit_eventhandlers {
+class extended_preinit_eventhandlers {
 	class ambientarma {
-		init = "[] call preprocessfilelinenumbers 'x\ambientarma\init.sqf'";
+		init = "[] call compile preprocessfilelinenumbers ""x\ambientarma\init.sqf"";";
+
 	};
 };
 
